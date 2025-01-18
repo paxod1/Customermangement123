@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 // Database Connection
-mongoose.connect(process.env.mongodbURL)
+mongoose.connect('mongodb+srv://chikubinoy:areeckal12@cluster0.haizr3t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
     .then(() => console.log('Database is connected'))
     .catch((error) => console.error('Database connection error:', error));
 
